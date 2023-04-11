@@ -15,7 +15,7 @@ const productos = [
     id: 3,
     nombre:"Cerveza",
     precio: 350,
-    img:"https://images.pexels.com/photos/2286972/pexels-photo-2286972.jpeg?cs=srgb&dl=pexels-thgusstavo-santana-2286972.jpg&fm=jpg"
+    img:"http://4.bp.blogspot.com/-K6edPdcVziA/UekSVcZiiAI/AAAAAAAADbw/aq3Jb2OuKxA/s1600/Cerveza_San_Miguel.jpg"
 },
 {
     id: 4,

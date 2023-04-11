@@ -7,7 +7,7 @@
     --mainBlack: #222;
     --mainGrey: #ececec;
     --mainSpacing: 0.01rem;
-    --mainTransition: all 0.3s linear;
+    --mainTransition: all 0.6s linear;
 }
 
 *{
@@ -17,7 +17,7 @@
 }
 
 body{
-    background-color: var(--mainWhite)
+    background-color: var(--mainWhite);
 }
 
 .nav-container{
@@ -67,10 +67,10 @@ body{
 
 .banner-container{
     text-align: center;
-    padding: 15% 0;
+    padding: 25.5% 0;
 }
 
-.banner h1{
+.banner h2{
     color: var(--mainWhite);
     font-size: 42px;
     opacity: 0.8;
@@ -91,6 +91,7 @@ body{
     margin: auto;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 2.5rem;
 }
 
 .card img{
@@ -120,6 +121,65 @@ body{
 .card button:hover{
     background-color: black;
     opacity: 0.9;
+    transition: var(--mainTransition);
+}
+
+/* modal content */
+
+.modal-container{
+    width: 80%;
+    margin: 0 10%;
+    max-height: 88vh;
+    color: var(--mainWhite);
+    background-color: var(--mainBlack);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    overflow: auto;
+    z-index: 9;
+    top: 12vh;
+}
+
+.modal-container::-webkit-scrollbar{
+    display: none;
+}
+
+.modal-header{
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    color: var(--mainWhite);
+    width: 100%;
+}
+
+.modal-header-title{
+    justify-self: start;
+}
+
+.modal-header-button{
+    cursor: pointer;
+}
+
+.modal-container > .modal-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    margin: 10px;
+}
+
+.modal-container > div > img{
+    height: 120px;
+    width: 120px;
+}
+
+.total-content{
+    font-size: 25px;
+    padding: 20px;
+    text-align: center;
+    padding-top: 20px;
 }
 
 
