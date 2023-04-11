@@ -88,7 +88,7 @@ body{
 .card{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9);
     max-width: 300px;
-    margin: auto;
+    margin: auto; 
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 2.5rem;
@@ -115,7 +115,7 @@ body{
     cursor: pointer;
     width: 100%;
     font-size: 18px;
-    margin-top: 0.3rem;
+    margin-top: 0.2rem;
 }
 
 .card button:hover{
@@ -180,6 +180,12 @@ body{
     padding: 20px;
     text-align: center;
     padding-top: 20px;
+}
+
+/* CLOSE */
+
+.delete-product{
+    cursor: pointer;
 }
 
 
