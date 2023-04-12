@@ -188,4 +188,22 @@ body{
     cursor: pointer;
 }
 
+/* Cantidad carrito */
+
+.cantidad-carrito {
+    background-color: violet;
+    color: var(--mainWhite);
+    border-radius: 50%;
+    font-size: 12px;
+    padding: 4px;
+    top: 30px;
+    right: 9px;
+    position: absolute;
+    display: none;
+}
+
+.up, .down{
+    cursor: pointer;
+}
+
 
