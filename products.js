@@ -22,9 +22,9 @@ const productos = [
 },
 {
     id: 4,
-    nombre:"Leche",
+    nombre:"Monster",
     precio: 400,
-    img:"https://ichef.bbci.co.uk/news/624/amz/worldservice/live/assets/images/2014/11/05/141105131956_leche_624x351_thinkstock.jpg",
+    img:"https://assets.iceland.co.uk/i/iceland/monster_mango_loco_energy_drink_500ml_79922_T1.jpg?$pdpzoom$",
     cantidad: 1,
 },
 

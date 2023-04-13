@@ -4,10 +4,10 @@
 :root {
     --primaryColor: #bb9c7f;
     --mainWhite: #fff;
-    --mainBlack: #222;
+    --mainBlack: #2c2c2c;
     --mainGrey: #ececec;
     --mainSpacing: 0.01rem;
-    --mainTransition: all 0.6s linear;
+    --mainTransition: all 0.4s linear;
 }
 
 *{
@@ -76,6 +76,13 @@ body{
     opacity: 0.8;
 }
 
+.products-title{
+    text-align: center;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--mainBlack);
+}
+
 /* product cards */
 
 .shop-content{
@@ -83,6 +90,7 @@ body{
     justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 24px;
+    background-color: #f3f1ef;
 }
 
 .card{
@@ -92,6 +100,7 @@ body{
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 2.5rem;
+    margin-top: 2.5rem;
 }
 
 .card img{
@@ -110,7 +119,7 @@ body{
     outline: 0;
     padding: 12px;
     color: white;
-    background-color: rgb(179, 122, 160);
+    background-color: rgb(196, 120, 196);
     text-align: center;
     cursor: pointer;
     width: 100%;
@@ -148,7 +157,7 @@ body{
 .modal-header{
     display: flex;
     justify-content: space-around;
-    background-color: black;
+    background-color: violet;
     color: var(--mainWhite);
     width: 100%;
 }
@@ -188,6 +197,11 @@ body{
     cursor: pointer;
 }
 
+.delete-product:hover{
+    color: red;
+    transition: var(--mainTransition);
+}
+
 /* Cantidad carrito */
 
 .cantidad-carrito {
@@ -204,6 +218,11 @@ body{
 
 .up, .down{
     cursor: pointer;
+    font-size: 21px;
 }
 
+.up:hover, .down:hover{
+    color: rgb(150, 139, 160);
+    transition: var(--mainTransition);
+}
 

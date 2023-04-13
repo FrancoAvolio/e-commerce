@@ -30,6 +30,7 @@ carrito.forEach((product) => {
   <span class = "fas fa-chevron-up up"> </span>
   <span class = "fas fa-chevron-down down"> </span>
   <p> Total: ${product.cantidad * product.precio} </p>
+  <span class = "delete-product"> X </span>
   `;
 
 modalContainer.append(carritoContent);
@@ -50,16 +51,11 @@ up.addEventListener("click", () => {
   pintarCarrito();
 })
 
- if(product.cantidad == 5) {
-    alert("Te vas a quedar pobre!")
- }
+let eliminar = carritoContent.querySelector(".delete-product");
+eliminar.addEventListener("click", () => {
+  eliminarProducto(product.id);
+})
 
-let eliminar = document.createElement("span");
-eliminar.innerText = "X";
-eliminar.style.color = "red"
-eliminar.className = "delete-product";
-carritoContent.append(eliminar)
-eliminar.addEventListener("click",eliminarProducto)
 });
 
  const total = carrito.reduce((acc, el) => acc + el.precio * el.cantidad, 0)
@@ -72,8 +68,8 @@ eliminar.addEventListener("click",eliminarProducto)
 
 verCarrito.addEventListener("click", pintarCarrito);
 
-const eliminarProducto = () => {
-  const foundId = carrito.find((element)=> element.id);
+const eliminarProducto = (id) => {
+  const foundId = carrito.find((element)=> element.id === id);
   carrito = carrito.filter((carritoId) => {
     return carritoId !== foundId;
   });
@@ -88,5 +84,4 @@ const carritoCounter = () => {
     localStorage.setItem("carritoLength", JSON.stringify(carritoLength))
     cantidadCarrito.innerText = JSON.parse(localStorage.getItem("carritoLength"))
 };
-
 carritoCounter();

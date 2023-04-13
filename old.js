@@ -5,7 +5,6 @@
 //   { nombre: "galletitas", precio: 250 },
 //   { nombre: "cerveza", precio: 350 },
 //   { nombre: "leche", precio: 400 },
-//   { nombre: "gaseosa", precio: 520 },
 // ];
 
 // const precios = {
@@ -13,7 +12,6 @@
 //   galletitas: 250,
 //   cerveza: 350,
 //   leche: 400,
-//   gaseosa: 520,
 // };
 
 // let carrito = [];
