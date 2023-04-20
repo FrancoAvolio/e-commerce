@@ -3,8 +3,6 @@ const verCarrito = document.getElementById("verCarrito");
 const modalContainer = document.getElementById("modalContainer")
 const cantidadCarrito = document.getElementById("cantidadCarrito")
 
-let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
-
 productos.forEach((product) => {
     let content = document.createElement("div");
     content.className = "card";
@@ -35,9 +33,11 @@ comprar.addEventListener("click",() => {
         precio: product.precio,
         cantidad: product.cantidad,
     });
-    }
+    console.log(carrito);
+    console.log(carrito.length)
     carritoCounter();
     saveLocal();
+    }
 });
 });
 

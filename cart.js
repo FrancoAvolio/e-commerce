@@ -1,4 +1,6 @@
 
+let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+
 const pintarCarrito = () => {
     modalContainer.innerHTML = "";
     modalContainer.style.display = "flex";
@@ -77,10 +79,18 @@ const eliminarProducto = (id) => {
   saveLocal();
   pintarCarrito();
 }
-
 const carritoCounter = () => {
     cantidadCarrito.style.display = "block"
     const carritoLength = carrito.length;
-    localStorage.setItem("carritoLength", JSON.stringify(carritoLength))
-    cantidadCarrito.innerText = JSON.parse(localStorage.getItem("carritoLength"))
+    localStorage.setItem("carritoLength", JSON.stringify(carritoLength));
+    cantidadCarrito.innerText = JSON.parse(localStorage.getItem("carritoLength"));
 };
+
+carritoCounter();
+
+
+
+
+  
+
+
