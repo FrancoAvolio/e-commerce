@@ -37,7 +37,22 @@
     <!-- modal container -->
     <div id="modalContainer" class="modal-container"></div>
     <!-- scripts -->
-    
+
+<form id="formularioCompra" class="formulario-compra">
+    <h2 class="formulario-compra__titulo">Información de compra</h2>
+    <label for="nombre" class="formulario-compra__label">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" class="formulario-compra__input" pattern="[A-Za-z\s]+"
+    title="Solo se permiten letras" required placeholder="Ingrese su nombre.">
+    <label for="direccion" class="formulario-compra__label">Dirección de envío:</label>
+    <input type="text" id="direccion" name="direccion" class="formulario-compra__input" pattern="[0-9a-zA-Z]+" required placeholder="Ingrese su dirección de envio.">
+    <label for="tarjeta" class="formulario-compra__label">Número de tarjeta de crédito:</label>
+    <input type="text" id="tarjeta" name="tarjeta" class="formulario-compra__input" pattern="[0-9]+" required placeholder="Ingrese su numero de tarjeta.">
+    <button type="submit" class="formulario-compra__boton">Finalizar compra</button>
+    <div id="mensajeError" class="formulario-compra__mensaje-error"></div>
+</form>
+
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="form.js"></script>
 <script src="./cart.js"></script>
 <script src="./products.js"></script>
 <script src="./app.js"></script>

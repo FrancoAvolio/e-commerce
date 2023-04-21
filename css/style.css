@@ -226,3 +226,43 @@ body{
     transition: var(--mainTransition);
 }
 
+ /* finalizar compra */
+
+.formulario-compra {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--mainWhite)
+}
+
+.formulario-compra__titulo {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.formulario-compra__label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.formulario-compra__input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.formulario-compra__boton {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #101111;
+    color: var(--mainGrey);
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+}
+
+.formulario-compra__boton:hover{
+    opacity: 0.9;
+    transition: var(--mainTransition);
+}
