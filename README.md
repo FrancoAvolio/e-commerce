@@ -1,1 +1,1 @@
-# simple e-commerce utilizando vanilla JS, CSS y HTML
+# simple e-commerce utilizando vanilla JS, JSON, CSS y HTML
